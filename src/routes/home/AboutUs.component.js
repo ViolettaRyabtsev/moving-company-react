@@ -1,6 +1,7 @@
 import { GiVikingHelmet } from "react-icons/gi";
 import "../main-text.styles.scss";
 import Reviews from "../../components/reviews/Reviews.compononent";
+import "./about.styles.scss";
 
 const AboutUs = () => {
   return (
@@ -33,25 +34,15 @@ const AboutUs = () => {
             efficient way possible so you move is as easy and streamlined as can
             be.
           </p>
-          <div className="price">
-            <div className="viking">
-              {" "}
-              <GiVikingHelmet /> <GiVikingHelmet /> 2 Vikings - 99/Hour{" "}
-            </div>
-            <div className="viking">
-              {" "}
-              <GiVikingHelmet /> <GiVikingHelmet /> <GiVikingHelmet /> 3 Vikings
-              - 129/Hour
-            </div>
-            <div className="viking">
-              <GiVikingHelmet /> <GiVikingHelmet /> <GiVikingHelmet />{" "}
-              <GiVikingHelmet /> 4 Vikings - 159/Hour
-            </div>
-            <div className="viking">
-              <GiVikingHelmet /> <GiVikingHelmet /> <GiVikingHelmet />{" "}
-              <GiVikingHelmet /> <GiVikingHelmet /> 5 Vikings - 189/Hour
-            </div>
-          </div>
+          <ul>
+            <li>Junior 1 Bedroom Apt. (1 person) 2 to 4 hrs - 2 movers</li>
+            <li>1 Bedroom Apt. (1 person) 3 to 5hrs - 2 movers</li>
+            <li>2 Bedroom Apt. (2 person) 5 to 6hrs - 2 movers</li>
+            <li>2 Bedroom Apt. (family) 6 to 8hrs - 2 movers</li>
+            <li>2 Bedroom House 6 to 8hrs - 2, 3 movers</li>
+            <li>3 Bedroom House 6 to 9hrs - 3 movers</li>
+            <li>4 Bedroom House up to 12hrs</li>
+          </ul>
           <p>
             {" "}
             We do have surcharges for unusually heavy or large items (see{" "}

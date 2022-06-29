@@ -5,7 +5,10 @@ import "./reviews.style.scss";
 const ReviewsComponents = () => {
   return (
     <>
-      <div className="check-review">Check out our Reviews on Yelp </div>
+      <div className="check-review">
+        {" "}
+        <h2>Check out our reviews on Yelp!</h2>{" "}
+      </div>
       <div className="reviews-container">
         {reviews.map((object) => (
           <ReviewItem review={object} />

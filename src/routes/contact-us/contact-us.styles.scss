@@ -3,3 +3,103 @@ background-color: #943d24;
 border: none;
 color: white;
 }
+
+
+
+.contact-container{
+margin-left: 200px;
+display: grid;
+grid-template-columns: 300px 300px ;
+grid-template-rows: 60px 60px 60px 90px 40px;
+margin-bottom: 40px;
+
+
+.contact-box-first-name{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #e4ddf4;
+    border:    #e4ddf4;
+    padding: 10px;
+}
+.contact-box-field-last-name{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #e4ddf4;
+    border:    #e4ddf4;
+    padding: 10px;
+}
+
+.contact-box-field-email{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color:  #d6cfe6;
+    border:    #e4ddf4;
+    padding: 10px;
+}
+.contact-box-field-phone{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #d6cfe6;
+    border:    #e4ddf4;
+    padding: 10px;
+}
+.contact-box-field-address{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end:  3;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #d2cce2;
+    border:    #e4ddf4;
+    padding: 10px;
+}
+
+.message-box{
+grid-row-start: 4;
+grid-column-start: 1;
+grid-column-end: 3;
+margin: 10px;
+border-radius: 5px 5px 5px 5px;
+background-color: #bfb9ce;
+border:    #e4ddf4;
+padding: 10px;
+}
+
+.submit-button{
+    background-color:  #837e8f;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px 7px 7px 7px;
+    grid-column-start: 1;
+    grid-row-start: 5; 
+    margin: 10px; 
+    font-family: 'Playfair Display', serif;
+    }
+
+}
+
+
+
+
+    @media(min-width: 696px){
+
+        .contact-container{
+width: 500px;
+
+margin:auto;
+
+grid-template-columns: 250px 250px ;
+grid-template-rows: 60px 60px 60px 90px 40px;
+margin-bottom: 40px;
+        }
+
+
+}
