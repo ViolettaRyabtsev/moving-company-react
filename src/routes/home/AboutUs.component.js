@@ -1,4 +1,4 @@
-import { GiVikingHelmet } from "react-icons/gi";
+import { BiPhoneCall } from "react-icons/bi";
 import "../main-text.styles.scss";
 import Reviews from "../../components/reviews/Reviews.compononent";
 import "./about.styles.scss";
@@ -50,6 +50,13 @@ const AboutUs = () => {
             does not apply. But please do let us know if you have an unusually
             heavy or large piece of furniture so we can come prepared.
           </p>
+          <h3>
+            Contact us for pricing:{" "}
+            <h2 style={{ color: "red", "font-weigh": "bolder" }}>
+              {" "}
+              818 845 46 47
+            </h2>{" "}
+          </h3>
         </div>
       </div>
       <Reviews />

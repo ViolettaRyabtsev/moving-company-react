@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./contact-us.styles.scss";
 import "../main-text.styles.scss";
-
+import axios from "axios";
 const defaultValue = {
   firstName: "",
   lastName: "",
@@ -29,7 +29,22 @@ function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(contactFormObject, "submit");
+    const url =
+      "https://g4dxkdfal9.execute-api.us-west-2.amazonaws.com/wehomoving-oregon/request-quote";
+
+    const corsEscaper = "https://cors-anywhere.herokuapp.com/";
+
+    let sendForm = async () => {
+      const resp = await axios
+        .post(url, contactFormObject)
+        .then((response) => console.log(response))
+        .catch((err) => console.log(err));
+
+      console.log(resp, "response");
+    };
+
+    sendForm();
+
     resetFields();
   };
 

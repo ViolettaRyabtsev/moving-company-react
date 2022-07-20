@@ -7,7 +7,7 @@ const ReviewsComponents = () => {
     <>
       <div className="check-review">
         {" "}
-        <h2>Check out our reviews on Yelp!</h2>{" "}
+        <h2></h2>{" "}
       </div>
       <div className="reviews-container">
         {reviews.map((object) => (
