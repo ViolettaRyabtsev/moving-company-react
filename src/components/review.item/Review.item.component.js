@@ -7,7 +7,7 @@ const ReviewItem = ({ review }) => {
     <div className="review-box">
       <div className="review-box-header">
         <h3>{name}</h3>
-        <h4>{date}</h4>
+        <h3 style={{ "margin-left": "10px" }}>{date}</h3>
       </div>
       <div>
         <AiFillStar />

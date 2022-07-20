@@ -7,31 +7,33 @@ import "./moving-service.style.scss";
 function MovingServices() {
   const slideImages = [
     {
-      src: "./images/car2.jpg",
+      src: "https://s3.us-west-2.amazonaws.com/moveviking.com/images/car2.jpg",
       caption: "Slide 1",
     },
     {
-      src: "./images/packing.jpg",
+      src:
+        "https://s3.us-west-2.amazonaws.com/moveviking.com/images/packing.jpg",
       caption: "Slide 2",
     },
     {
-      src: "./images/shelf.jpg",
+      src: "https://s3.us-west-2.amazonaws.com/moveviking.com/images/shelf.jpg",
       caption: "Slide 3",
     },
     {
-      src: "./images/smile.jpg",
+      src: "https://s3.us-west-2.amazonaws.com/moveviking.com/images/smile.jpg",
       caption: "Slide 3",
     },
     {
-      src: "./images/car.jpg",
+      src: "https://s3.us-west-2.amazonaws.com/moveviking.com/images/car.jpg",
       caption: "Slide 3",
     },
     {
-      src: "./images/money.jpg",
+      src: "https://s3.us-west-2.amazonaws.com/moveviking.com/images/money.jpg",
       caption: "Slide 3",
     },
     {
-      src: "./images/moving.jpg",
+      src:
+        "https://s3.us-west-2.amazonaws.com/moveviking.com/images/moving.jpg",
       caption: "Slide 3",
     },
   ];
