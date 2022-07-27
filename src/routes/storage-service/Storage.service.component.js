@@ -16,7 +16,6 @@ function StorageServices() {
           your storage needs.
         </p>
       </div>
-      ;
     </div>
   );
 }

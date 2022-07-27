@@ -18,7 +18,7 @@ function App() {
   return (
     <ParallaxProvider>
       <Parallax
-        bgImage={
+        bgimage={
           "https://s3.us-west-2.amazonaws.com/moveviking.com/images/abstract.jpg"
         }
         strength={600}
