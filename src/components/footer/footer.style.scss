@@ -2,7 +2,8 @@
 
     img{
         margin-top: 20px;
-        margin-left: 25px;
+        margin-left: 20px;
+        height: 100px;
     }
 
     h4{
@@ -15,7 +16,7 @@ grid-template-columns: 30% 40% 30% ;
 grid-template-rows: 100px 100px;
 background-color: #e4ddf4;
 margin-top: 200px;
-opacity: 0.9;
+
 
 .button{
 grid-row-start: 2;
@@ -24,7 +25,7 @@ background-color:  #837e8f;
 width: 200px;
 height: 40px;
 margin-top: 50px;
-margin-left: 20px;
+margin-left: 10px;
 border-radius: 7px 7px 7px 7px;
 color: #e4ddf4;
 
@@ -32,6 +33,7 @@ color: #e4ddf4;
     text-decoration: none;
     color: #e4ddf4;
     font-family: 'Playfair Display', serif;
+    font-weight: 800;
 }
 
 
@@ -60,11 +62,8 @@ margin: 30px;
         height: 130px;
         display: grid;
         padding-top:20px ;
-        opacity: 0.7;
+        opacity: 0.8;
     }
-
-   
-
 
 }
 
@@ -76,7 +75,7 @@ font-size: 13px;
     }
 
     .footer-container{
-        margin-top: 500px;
+        margin-top: 480px;
     }
 
 }

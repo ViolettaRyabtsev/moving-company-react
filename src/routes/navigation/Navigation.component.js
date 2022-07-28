@@ -11,7 +11,7 @@ const Navigation = () => {
           <img
             className="logo-container"
             alt="logo"
-            src="https://s3.us-west-2.amazonaws.com/moveviking.com/images/logo-viking.png"
+            src="https://s3.us-west-2.amazonaws.com/moveviking.com/images/logo-viking-footer.png"
           ></img>
         </div>
         <div className="nav-links-container">

@@ -1,5 +1,5 @@
 .navigation-container{
-    height: 70px;
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -9,8 +9,9 @@
 
 .logo-container{
     height: 100%;
-    width: 130px;
-  
+    width: 150px;
+    margin-left: 20px;
+
 }
  
 .nav-links-container{
@@ -20,7 +21,7 @@ height: 100%;
 display: flex;
 align-items: center;
 justify-content: flex-start;
-margin-left: 40px;
+margin-left: 20px;
 
 .nav-link{
     padding: 10px 15px;
@@ -38,20 +39,23 @@ margin-left: 40px;
 }
 
  @media (max-width: 696px){
+
+    .logo-container{
+        height: 100%;
+         width: 120px;
+         margin-left: 5px;
+      
+     }
     .nav-links-container{
 
-margin-left: 10px;
+margin-left: 2px;
 
         .nav-link{
-padding-right: 10px;
+
             font-size: 10px;
         }
        
-       .logo-container{
-           height: 100%;
-            width: 100px;
-         
-        }
+    
 
     }
      

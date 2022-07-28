@@ -1,7 +1,7 @@
 import "./footer.style.scss";
-import { ImInstagram } from "react-icons/im";
+import { GoLocation } from "react-icons/go";
 import { FaYelp } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
+
 import { AiFillFacebook } from "react-icons/ai";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-container">
       <img
         alt="logo"
-        src="https://s3.us-west-2.amazonaws.com/moveviking.com/images/logo-viking.png"
+        src="https://s3.us-west-2.amazonaws.com/moveviking.com/images/logo-viking-footer.png"
       ></img>
       <button className="button">
         <Link className="link" to="/contact-us">
@@ -18,14 +18,16 @@ const Footer = () => {
       </button>
       <div className="phone-container">
         <h4>818 845 46 47</h4>
-        <h4>viking@vikingmovingandrelocation.com</h4>
+        <h4>Vikingmovingandrelocation@gmail.com</h4>
         <h4>Long Beach, CA</h4>
       </div>
       <div className="social-media-container">
-        <ImInstagram />
-        <FaYelp />
-        <BsTwitter />
-        <AiFillFacebook />
+        <a href="https://www.yelp.com/biz/viking-moving-and-relocation-services-long-beach">
+          <FaYelp style={{ color: "black", opacity: "0.8" }} size={30} />
+        </a>
+        <a href="https://goo.gl/maps/mr66i3sJsSq2ZMeZ7">
+          <GoLocation style={{ color: "black", opacity: "0.8" }} size={30} />
+        </a>
       </div>
     </div>
   );
