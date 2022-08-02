@@ -3,7 +3,7 @@
   "name": "viking moving company",
   "icons": [
     {
-      "src": "viking.jpg",
+      "src": "https://s3.us-west-2.amazonaws.com/moveviking.com/viking.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
