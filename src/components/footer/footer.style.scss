@@ -80,4 +80,19 @@ font-size: 13px;
 
 }
 
+@media(max-width: 375px){
 
+    .footer-container{
+        margin-top: 10px;
+    }
+
+    .social-media-container{
+        visibility: hidden;
+    }
+
+    .phone-container{
+        visibility: hidden;
+
+    }
+
+}

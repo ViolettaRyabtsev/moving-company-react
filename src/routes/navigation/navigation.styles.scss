@@ -61,3 +61,33 @@ margin-left: 2px;
      
 
 }
+
+
+@media(max-width: 375px){
+
+    .nav-links-container{
+        display: grid;
+        grid-template-columns: 120px 120px 120px;
+        grid-template-rows: 40px 40px;
+
+      .nav-link{
+        font-size: 8px;
+    }
+    }
+    
+ 
+    .logo-container {
+     width: 1px;
+     height: 1px;
+         visibility:hidden;
+
+     }
+
+
+       
+       
+    
+
+
+
+}

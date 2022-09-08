@@ -76,3 +76,19 @@ width: 600px;
     }
 
 }
+@media(max-width: 375px){
+
+    .reviews-container{
+        width: 350px;
+        
+        .review-box{
+            width: 300px;
+            font-size: 13px;
+         
+        
+        }
+        
+            }
+        
+}
+
