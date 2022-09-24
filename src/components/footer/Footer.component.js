@@ -2,7 +2,6 @@ import "./footer.style.scss";
 import { GoLocation } from "react-icons/go";
 import { FaYelp } from "react-icons/fa";
 
-import { AiFillFacebook } from "react-icons/ai";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -17,16 +16,16 @@ const Footer = () => {
         </Link>
       </button>
       <div className="phone-container">
-        <h4>818 845 46 47</h4>
+        <h4 style={{ color: "#0464a4" }}>(818) 845 46 47</h4>
         <h4>Vikingmovingandrelocation@gmail.com</h4>
         <h4>Long Beach, CA</h4>
       </div>
       <div className="social-media-container">
         <a href="https://www.yelp.com/biz/viking-moving-and-relocation-services-long-beach">
-          <FaYelp style={{ color: "black", opacity: "0.8" }} size={30} />
+          <FaYelp style={{ color: "#746c61" }} size={30} />
         </a>
         <a href="https://goo.gl/maps/mr66i3sJsSq2ZMeZ7">
-          <GoLocation style={{ color: "black", opacity: "0.8" }} size={30} />
+          <GoLocation style={{ color: "#746c61" }} size={30} />
         </a>
       </div>
     </div>

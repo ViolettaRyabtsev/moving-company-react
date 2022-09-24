@@ -6,33 +6,26 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation-container">
-        <div>
-          {" "}
-          <img
-            className="logo-container"
-            alt="logo"
-            src="https://s3.us-west-2.amazonaws.com/moveviking.com/images/logo-viking-footer.png"
-          ></img>
-        </div>
+        <h3>Viking Moving And Relocation</h3>
         <div className="nav-links-container">
           <Link className="nav-link" to="/">
-            ABOUT US
+            Home
+          </Link>
+          <Link className="nav-link" to="/about-us">
+            About
           </Link>
           <Link className="nav-link" to="/moving-services">
-            MOVING SERVICED
+            Moving Serviced
           </Link>
-          <Link className="nav-link" to="/piano-safes">
-            {" "}
-            PIANO AND SAFES
-          </Link>
+
           <Link className="nav-link" to="/packing-services">
-            PACKING SERVICES
+            Packing Services
           </Link>
           <Link className="nav-link" to="/storage-services">
-            STORAGE SERVICES
+            Storage Services
           </Link>
           <Link className="nav-link" to="/contact-us">
-            CONTACT US
+            Contact Us
           </Link>
         </div>
       </div>

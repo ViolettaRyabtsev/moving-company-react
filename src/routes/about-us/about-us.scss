@@ -1,0 +1,178 @@
+.about-us-container{
+        background-color: rgba(#fffbf0, 0.5);
+        font-family: 'Libre Bodoni', serif;
+        display: grid;
+   padding-top: 100px;
+   padding-bottom: 100px;
+        text-align: center;
+
+        p{
+
+            width: 70%;
+            margin-left:auto ;
+            margin-right: auto;
+            font-size: 15px;
+        }
+       
+         img{
+    width: 200px;
+    color: #746c61;
+    padding-bottom: 0px;
+margin-left:auto ;
+margin-right: auto;
+
+    
+         }
+            h2{
+                font-size: 60px;
+                color: #746c61;
+            
+            }
+    
+            h3{
+                color:  #0464a4;
+                font-size: 30px;
+                
+            }
+
+
+        }
+
+        .heavy-lifting-container{
+            font-family: 'Libre Bodoni', serif;
+width: 40%;
+justify-content: end;
+text-align: end;
+margin-left: auto;
+margin-right: 100px;
+margin-top: 100px;
+display: grid;
+grid-template-columns: 400px 500px;
+grid-template-rows: 700px 600px  ;
+
+
+h2{
+font-size: 35px;
+
+}
+.heavy-lift-text{
+text-align: right;
+font-family: 'Libre Bodoni', serif;
+
+}
+
+img{
+    width: 450px;
+    height: 650px;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+}
+
+.experience-container{
+    text-align: left;
+    grid-column-end: 3;
+grid-column-start: 1;
+margin-right: 30px;
+
+}
+p{
+    font-family: 'Libre Bodoni', serif;
+font-size: 20px;
+
+
+}
+
+        }
+
+     
+
+@media(max-width: 393px){
+        .about-us-container{
+            background-color: rgba(#fffbf0, 0.5);
+            font-family: 'Libre Bodoni', serif;
+            display: grid;
+       padding-top: 100px;
+       padding-bottom: 100px;
+            text-align: center;
+            
+    
+            p{
+    
+                width: 90%;
+                margin-left:auto ;
+                margin-right: auto;
+                font-size: 15px;
+            }
+           
+             img{
+        width: 200px;
+        color: #746c61;
+        padding-bottom: 0px;
+    margin-left:auto ;
+    margin-right: auto;
+    grid-column-start: 1;
+    
+        
+             }
+                h2{
+                    font-size: 60px;
+                    color: #746c61;
+                
+                }
+        
+                h3{
+                    color:  #0464a4;
+                    font-size: 30px;
+                    
+                }
+    
+    
+            }
+    
+            .heavy-lifting-container{
+                font-family: 'Libre Bodoni', serif;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 900px  ;
+    
+    
+    h2{
+    font-size: 35px;
+    
+    }
+    .heavy-lift-text{
+    text-align: center;
+    font-family: 'Libre Bodoni', serif;
+    
+    }
+    
+    img{
+       
+        display: none;
+        
+    }
+    
+    .experience-container{
+        text-align: center;
+    grid-column-start: 1;
+    margin-right: 30px;
+    
+    
+    }
+    p{
+        font-family: 'Libre Bodoni', serif;
+    font-size: 18px;
+    
+    
+    }
+    
+            }
+        }

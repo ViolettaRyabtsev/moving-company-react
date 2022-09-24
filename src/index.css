@@ -5,10 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://s3.us-west-2.amazonaws.com/moveviking.com/images/box2.jpg");
+  background-image: url("https://s3.us-west-2.amazonaws.com/moveviking.com/images/box.jpg");
   background-repeat: no-repeat;
   background-size:cover;
    background-attachment: fixed; 
+  
 
 }
 

@@ -54,79 +54,78 @@ function ContactUs() {
   };
 
   return (
-    <div className="text-container">
-      <h2>
-        This is an exclusive channel where you can get in touch with Viking.
-        Send us your suggestion, doubt or compliment.
-      </h2>
-      <div className="contact-form">
-        <form className="contact-container" onSubmit={handleSubmit}>
-          <input
-            name="firstName"
-            placeholder="First name"
-            onChange={handleChange}
-            label="first-name"
-            type="text"
-            value={firstName}
-            className="contact-box-first-name"
-            required
-          />
-          <input
-            onChange={handleChange}
-            name="lastName"
-            placeholder="Last name"
-            label="last-name"
-            value={lastName}
-            type="text"
-            className="contact-box-field-last-name"
-            required
-          />
-          <input
-            label="email"
-            type="email"
-            placeholder="email"
-            value={email}
-            className="contact-box-field-email"
-            onChange={handleChange}
-            name="email"
-            required
-          />
-          <input
-            name="phone"
-            placeholder="Phone number"
-            label="phone-number"
-            type="text"
-            value={phone}
-            className="contact-box-field-phone"
-            onChange={handleChange}
-            required
-          />
-          <input
-            placeholder="address"
-            name="address"
-            value={address}
-            onChange={handleChange}
-            type="text"
-            label="address"
-            className="contact-box-field-address"
-            required
-          />
-          <input
-            placeholder="message"
-            name="message"
-            value={message}
-            label="message"
-            className="message-box"
-            type="text"
-            onChange={handleChange}
-            required
-          />
-          <button type="submit" className="submit-button">
-            SEND
-          </button>
-        </form>
+    <>
+      <div className="contact-us-container">
+        <h2>Get Started With a Free Phone or Online Quote</h2>
+        <div className="contact-form">
+          <form className="contact-container" onSubmit={handleSubmit}>
+            <input
+              name="firstName"
+              placeholder="First name"
+              onChange={handleChange}
+              label="first-name"
+              type="text"
+              value={firstName}
+              className="contact-box-first-name"
+              required
+            />
+            <input
+              onChange={handleChange}
+              name="lastName"
+              placeholder="Last name"
+              label="last-name"
+              value={lastName}
+              type="text"
+              className="contact-box-field-last-name"
+              required
+            />
+            <input
+              label="email"
+              type="email"
+              placeholder="email"
+              value={email}
+              className="contact-box-field-email"
+              onChange={handleChange}
+              name="email"
+              required
+            />
+            <input
+              name="phone"
+              placeholder="Phone number"
+              label="phone-number"
+              type="text"
+              value={phone}
+              className="contact-box-field-phone"
+              onChange={handleChange}
+              required
+            />
+            <input
+              placeholder="address"
+              name="address"
+              value={address}
+              onChange={handleChange}
+              type="text"
+              label="address"
+              className="contact-box-field-address"
+              required
+            />
+            <input
+              placeholder="message"
+              name="message"
+              value={message}
+              label="message"
+              className="message-box"
+              type="text"
+              onChange={handleChange}
+              required
+            />
+            <button type="submit" className="submit-button">
+              SEND
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

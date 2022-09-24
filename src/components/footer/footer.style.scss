@@ -1,5 +1,5 @@
 .footer-container{
-
+    font-family: 'Libre Bodoni', serif;
     img{
         margin-top: 20px;
         margin-left: 20px;
@@ -14,30 +14,31 @@
 display: grid;
 grid-template-columns: 30% 40% 30% ;
 grid-template-rows: 100px 100px;
-background-color: #e4ddf4;
+background-color: rgba(#fffbf0, 0.7);
 margin-top: 200px;
+padding-bottom: 10px;
 
 
 .button{
+    background-color:  #0464a4;
+    width: 200px;
+    height: 50px;
+    font-family: 'Libre Bodoni', serif;
+    border: none;
+    color: white;
+    font-size: 16px;
 grid-row-start: 2;
 grid-column-start: 1;
-background-color:  #837e8f;
-width: 200px;
-height: 40px;
 margin-top: 50px;
 margin-left: 10px;
-border-radius: 7px 7px 7px 7px;
 color: #e4ddf4;
 
 .link{
     text-decoration: none;
     color: #e4ddf4;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Libre Bodoni', serif;
     font-weight: 800;
-}
-
-
-
+    }
 }
 
 .phone-container{
@@ -46,10 +47,7 @@ grid-row-start: 1;
 grid-row-end: 3;
 border-left: solid 2px ;
 padding-left: 20px;
-height: 150px;
 margin: 30px;
-
-
     }
 
     .social-media-container{
@@ -59,40 +57,89 @@ margin: 30px;
         border-left: solid 2px;
         margin: 30px;
         padding-left: 20px;
-        height: 130px;
         display: grid;
-        padding-top:20px ;
+        padding-top:25px ;
         opacity: 0.8;
     }
 
 }
 
-@media (max-width: 696px){
 
-    h4{
-font-size: 13px;
 
-    }
+@media(max-width: 393px){
 
     .footer-container{
-        margin-top: 480px;
+        font-family: 'Libre Bodoni', serif;
+        img{
+            margin-top: 30px;
+            margin-left: 0px;
+            height: 80px;
+            width: 160px;
+        }
+    
+        h4{
+            opacity: 0.7;
+            font-family: 'Playfair Display', serif;
+        }
+    
+    display: grid;
+    grid-template-columns: 30% 40% 30% ;
+    grid-template-rows: 100px 100px;
+    background-color: rgba(#fffbf0, 0.7);
+    margin-top: 200px;
+    padding-bottom: 10px;
+    
+    
+    .button{
+        background-color:  #0464a4;
+        width: 150px;
+        height: 50px;
+        font-family: 'Libre Bodoni', serif;
+        border: none;
+        color: white;
+        font-size: 13px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #e4ddf4;
+    
+    .link{
+        text-decoration: none;
+        color: white;
+        font-family: 'Libre Bodoni', serif;
+        font-weight: 100;
+      
+        }
     }
-
-}
-
-@media(max-width: 375px){
-
-    .footer-container{
-        margin-top: 10px;
-    }
-
-    .social-media-container{
-        visibility: hidden;
-    }
-
+    
     .phone-container{
-        visibility: hidden;
-
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-left: solid 2px ;
+    padding-left: 20px;
+    margin: 30px;
+    overflow: hidden;
+    visibility: hidden;
+        }
+    
+        .social-media-container{
+            grid-column-start: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border-left: solid 2px;
+            margin: 30px;
+            padding-left: 10px;
+            display: grid;
+            padding-top:20px ;
+            opacity: 0.8;
+    
+         
+        }
+    
     }
-
+    
+   
+    
 }
