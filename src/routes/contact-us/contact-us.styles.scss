@@ -10,11 +10,13 @@ opacity: 0.8;
 width: 50%;
 z-index: 3;
 transform: translate(0%, 15%);
+
+
 h2{
  
     text-align: start;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     padding-left: 60px;
     opacity: 0.8;
     margin-top: 20px;
@@ -22,32 +24,34 @@ h2{
 
 }
 
+input:focus{
+    background-color: #e4ddf4;
+
+}
+
+::placeholder{
+  
+}
+
 .contact-container{
   
 margin-left: 50px;
 display: grid;
 grid-template-columns: 250px 250px ;
-grid-template-rows: 70px 70px 70px 160px 40px;
+ grid-template-rows: 70px 70px 70px 70px 160px 40px;
 
 
 .contact-box-first-name{
     grid-column-start: 1;
-    grid-row-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1; 
     margin: 10px;
     border-radius: 5px 5px 5px 5px;
     background-color: #e4ddf4;
     border:    #e4ddf4;
     padding: 10px;
 }
-.contact-box-field-last-name{
-    grid-column-start: 2;
-    grid-row-start: 1;
-    margin: 10px;
-    border-radius: 5px 5px 5px 5px;
-    background-color: #e4ddf4;
-    border:    #e4ddf4;
-    padding: 10px;
-}
+
 
 .contact-box-field-email{
     grid-column-start: 1;
@@ -67,10 +71,8 @@ grid-template-rows: 70px 70px 70px 160px 40px;
     border:    #e4ddf4;
     padding: 10px;
 }
-.contact-box-field-address{
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-column-end:  3;
+.contact-box-field-moveFrom{
+   
     margin: 10px;
     border-radius: 5px 5px 5px 5px;
     background-color: #d2cce2;
@@ -78,15 +80,43 @@ grid-template-rows: 70px 70px 70px 160px 40px;
     padding: 10px;
 }
 
-.message-box{
-grid-row-start: 4;
-grid-column-start: 1;
-grid-column-end: 3;
+.contact-box-field-moveto{
+  
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #d2cce2;
+    border:    #e4ddf4;
+    padding: 10px;
+}
+
+.contact-box-field-movedate{
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #d2cce2;
+    border:    #e4ddf4;
+    padding: 10px;
+
+
+}
+
+.contact-box-field-aptSize{
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #d2cce2;
+    border:    #e4ddf4;
+    padding: 10px;
+}
+
+
+.details-box{
+
 margin: 10px;
 border-radius: 5px 5px 5px 5px;
 background-color: #bfb9ce;
 border:    #e4ddf4;
 padding: 10px;
+grid-column-start: 1;
+grid-column-end: 3;
 }
 
 .submit-button{
@@ -94,7 +124,7 @@ padding: 10px;
     width: 150px;
     height: 50px;
     grid-column-start: 1;
-    grid-row-start: 5; 
+    grid-row-start: 6; 
     margin: 10px; 
     font-family: 'Libre Bodoni', serif;
     font-size: 16px;
@@ -126,34 +156,22 @@ padding: 10px;
             .contact-container{
               
             margin-left: 0px;
-            
             display: grid;
             grid-template-columns: 175px 175px ;
-            grid-template-rows: 50px 50px 60px 120px 30px;
+            grid-template-rows: 60px 60px 70px 70px 160px 40px;
+
         
             
             .contact-box-first-name{
-                grid-column-start: 1;
-                grid-row-start: 1;
                 margin: 5px;
                 border-radius: 5px 5px 5px 5px;
                 background-color: #e4ddf4;
                 border:    #e4ddf4;
                 padding: 10px;
             }
-            .contact-box-field-last-name{
-                grid-column-start: 2;
-                grid-row-start: 1;
-                margin: 5px;
-                border-radius: 5px 5px 5px 5px;
-                background-color: #e4ddf4;
-                border:    #e4ddf4;
-                padding: 10px;
-            }
+         
             
             .contact-box-field-email{
-                grid-column-start: 1;
-                grid-row-start: 2;
                 margin: 5px;
                 border-radius: 5px 5px 5px 5px;
                 background-color:  #d6cfe6;
@@ -161,29 +179,44 @@ padding: 10px;
                 padding: 10px;
             }
             .contact-box-field-phone{
-                grid-column-start: 2;
-                grid-row-start: 2;
+              
                 margin: 5px;
                 border-radius: 5px 5px 5px 5px;
                 background-color: #d6cfe6;
                 border:    #e4ddf4;
                 padding: 10px;
             }
-            .contact-box-field-address{
-                grid-column-start: 1;
-                grid-row-start: 3;
-                grid-column-end:  3;
-                margin: 5px;
+           
+            .contact-box-field-moveFrom{
+   
+                margin: 10px;
                 border-radius: 5px 5px 5px 5px;
                 background-color: #d2cce2;
                 border:    #e4ddf4;
                 padding: 10px;
             }
             
-            .message-box{
-            grid-row-start: 4;
-            grid-column-start: 1;
-            grid-column-end: 3;
+            .contact-box-field-moveto{
+              
+                margin: 10px;
+                border-radius: 5px 5px 5px 5px;
+                background-color: #d2cce2;
+                border:    #e4ddf4;
+                padding: 10px;
+            }
+            
+            .contact-box-field-movedate{
+                margin: 10px;
+                border-radius: 5px 5px 5px 5px;
+                background-color: #d2cce2;
+                border:    #e4ddf4;
+                padding: 10px;
+            
+            }
+            
+            
+            .details-box{
+        
             margin: 5px;
             border-radius: 5px 5px 5px 5px;
             background-color: #bfb9ce;
@@ -195,8 +228,7 @@ padding: 10px;
                 background-color:  #7699c3;
                 width: 120px;
                 height: 30px;
-                grid-column-start: 1;
-                grid-row-start: 5; 
+    
                 margin: 5px; 
                 font-family: 'Libre Bodoni', serif;
                 font-size: 13px;

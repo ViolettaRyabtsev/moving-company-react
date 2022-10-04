@@ -48,7 +48,7 @@ margin-top: 15px;
      }
     .nav-links-container{
 
-margin-left: 2px;
+margin-left: 5px;
 
         .nav-link{
 
@@ -64,9 +64,22 @@ margin-left: 2px;
 @media(max-width: 393px){
 
     .navigation-container{
+
         display: flex;
         justify-content: space-between;
         background-color: white;
+        .nav-link{
+            padding: 1px 13px;
+            cursor: pointer;
+            font-family: 'Libre Bodoni', serif;
+            font-weight: 800;
+            font-size: 10px;
+            text-decoration: none;
+            color: #2d2d2d;
+            &:hover{
+           color: #746c61;
+            }
+           }
     
         h3{
             font-family: 'Libre Bodoni', serif;

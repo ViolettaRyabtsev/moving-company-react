@@ -4,23 +4,29 @@ import "./contact-us.styles.scss";
 import "../main-text.styles.scss";
 import axios from "axios";
 const defaultValue = {
-  firstName: "",
-  lastName: "",
+  name: "",
   phone: "",
   email: "",
-  address: "",
-  message: "",
+  moveFrom: "",
+  moveTo: "",
+  moveDate: "",
+  details: "",
+  website: "www.wehomoving.com",
+  aptSize: "",
+  sendFrom: "booking@wehomoving.com",
 };
 
 function ContactUs() {
   const [contactFormObject, setContactFormObject] = useState(defaultValue);
   const {
-    firstName,
-    lastName,
+    name,
     phone,
     email,
-    address,
-    message,
+    moveFrom,
+    moveTo,
+    moveDate,
+    details,
+    aptSize,
   } = contactFormObject;
 
   const resetFields = () => {
@@ -28,6 +34,8 @@ function ContactUs() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    console.log(contactFormObject, "object");
 
     const url =
       "https://g4dxkdfal9.execute-api.us-west-2.amazonaws.com/wehomoving-oregon/request-quote";
@@ -37,20 +45,33 @@ function ContactUs() {
     let sendForm = async () => {
       const resp = await axios
         .post(url, contactFormObject)
-        .then((response) => console.log(response))
+        .then(
+          (response) => console.log(response, "response")
+          // alert(
+          //   "Your quote has been sent! We would get back to you as soon as we can."
+          // )
+        )
         .catch((err) => console.log(err));
 
       console.log(resp, "response");
     };
 
     sendForm();
-
     resetFields();
   };
 
   const handleChange = (e) => {
+    console.log(contactFormObject);
     const { name, value } = e.target;
+    console.log("name and value", name, value);
     setContactFormObject({ ...contactFormObject, [name]: value });
+
+    if (name === "moveDate") {
+      setContactFormObject({
+        ...contactFormObject,
+        [name]: value.split("-").join("-"),
+      });
+    }
   };
 
   return (
@@ -60,23 +81,13 @@ function ContactUs() {
         <div className="contact-form">
           <form className="contact-container" onSubmit={handleSubmit}>
             <input
-              name="firstName"
-              placeholder="First name"
+              name="name"
+              placeholder="name"
               onChange={handleChange}
-              label="first-name"
+              label="name"
               type="text"
-              value={firstName}
+              value={name}
               className="contact-box-first-name"
-              required
-            />
-            <input
-              onChange={handleChange}
-              name="lastName"
-              placeholder="Last name"
-              label="last-name"
-              value={lastName}
-              type="text"
-              className="contact-box-field-last-name"
               required
             />
             <input
@@ -91,7 +102,7 @@ function ContactUs() {
             />
             <input
               name="phone"
-              placeholder="Phone number"
+              placeholder="phone number"
               label="phone-number"
               type="text"
               value={phone}
@@ -100,24 +111,50 @@ function ContactUs() {
               required
             />
             <input
-              placeholder="address"
-              name="address"
-              value={address}
+              placeholder="move from"
+              name="moveFrom"
+              value={moveFrom}
               onChange={handleChange}
               type="text"
-              label="address"
-              className="contact-box-field-address"
+              label="move from"
+              className="contact-box-field-moveFrom"
+            />
+            <input
+              placeholder="move to"
+              name="moveTo"
+              value={moveTo}
+              onChange={handleChange}
+              type="text"
+              label="move to"
+              className="contact-box-field-moveto"
+            />
+            <input
+              placeholder="move date"
+              name="moveDate"
+              value={moveDate}
+              onChange={handleChange}
+              type="date"
+              label="date"
+              className="contact-box-field-movedate"
               required
             />
             <input
-              placeholder="message"
-              name="message"
-              value={message}
-              label="message"
-              className="message-box"
+              placeholder="apartment size"
+              name="aptSize"
+              value={aptSize}
+              onChange={handleChange}
+              type="text"
+              label="aptSize"
+              className="contact-box-field-aptSize"
+            />
+            <input
+              placeholder="details"
+              name="details"
+              value={details}
+              label="details"
+              className="details-box"
               type="text"
               onChange={handleChange}
-              required
             />
             <button type="submit" className="submit-button">
               SEND
